@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
-// import { JetBrains Mono } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const spaceMono = Space_Mono({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata = {
   title: "Yash Ghogre - Portfolio",
@@ -12,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={spaceMono.className}>{children}</body>
     </html>
   );
 }
